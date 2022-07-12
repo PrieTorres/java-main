@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;testaVaraiaveis.java&apos; to &apos;TestaVariaveis.java&apos;&#x0D;&#x0A;- Original project: &apos;sintaxe-variaveis-e-fluxo&apos;&#x0D;&#x0A;- Original element: &apos;testaVaraiaveis.java&apos;&#x0D;&#x0A;- Renamed element: &apos;TestaVariaveis.java&apos;" description="Rename compilation unit &apos;testaVaraiaveis.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{testaVaraiaveis.java" name="TestaVariaveis.java" references="false" stamp="1657634572785" version="1.0"/>
+</session>

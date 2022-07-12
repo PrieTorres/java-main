@@ -1,0 +1,16 @@
+
+public class TesteConversao {
+	
+	public static void main (String[] args) {
+		double salario = 1234.56;
+		// int valor = salario;
+		int valor = (int) salario; //(int) transforma o valor em inteiro
+		
+		System.out.println(salario);
+		System.out.println(valor);
+		
+		int x = 2000000000;
+		System.out.println(x);
+	}
+
+}
