@@ -145,7 +145,8 @@
 		font-family: 'Courier New', Courier, monospace;
 		font-weight: bolder;
 		float: right;
-		padding: 8px;
+		padding: 18px;
+		z-index: 999;
 	}
 </style>
 </head>
@@ -208,8 +209,8 @@
 		</div>
 
 		<div class="modal-new-pasta" style="display: none;">
-			<div class="close">X</div>
-			<form action="" method="post" class="form-new-pasta">
+			<div class="close" onclick="closeModal('modal-new-pasta')">X</div>
+			<form action="/criar-pasta" method="post" class="form-new-pasta">
 				<label class="label-input">
 					Informe o nome da sua pasta:
 					<input type="text" name="name" class="input input-nome-pasta">
