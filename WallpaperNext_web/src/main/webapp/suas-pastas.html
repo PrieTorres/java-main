@@ -114,6 +114,39 @@
 		padding: 40px;
 		padding-bottom: 60px;
 	}
+	.modal-new-pasta{
+		position: absolute;
+		background-color: #f1f1f1f1;
+		width: 70vw;
+		min-height: 20vh;
+		top: calc(40% - 20vh);
+		left: calc(50% - 35vw);
+		margin: 0 auto;
+	}
+	.form-new-pasta{
+		padding: 30px;
+	}
+	.form-new-pasta .label-input{
+		font-size: 3rem;
+		font-family: 'Courier New', Courier, monospace;
+		width: 100%;
+		box-sizing: content-box;
+		margin-bottom: 35px;
+		display: block;
+	}
+	.form-new-pasta input{
+		padding: 20px;
+		display: block;
+		margin: 15px 0px;
+		width: calc(100% - 60px);
+	}
+	.close{
+		font-size: 3rem;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: bolder;
+		float: right;
+		padding: 8px;
+	}
 </style>
 </head>
 <body style="padding: 0; margin: 0; width: 100vw; height: 100vh">
@@ -134,8 +167,8 @@
 	</div>
 	<header>
 		<div class="head-content">
-			<div class="botao-icon botao-main" onclick="openMenu()">
-				<img class="icon" src="img/menu.png" alt="menu icon" >
+			<div class="botao-icon botao-main" onclick="window.location.href = window.location.origin+'/WallpaperNext_web/bem-vindo.html'">
+				<img class="icon" src="img/go-back-icon.png" alt="menu icon" >
 			</div>
 			<h1 class="title" style="font-size: 3rem;">WallpaperNext</h1>
 			<div class="botao-icon botao-out">
@@ -163,9 +196,31 @@
 					<p class="text-icon">pasta 3</p>
 				</div>
 			</div>
+			<div class="option">
+				<div class="icon-cntainer" onclick="
+					document.body.querySelector(`.modal-new-pasta`).style = 'block';
+				">
+					<img class="menu-icon" src="img/add-pasta.png" alt="new pasta icon">
+					<p class="text-icon">Criar nova pasta</p>
+				</div>
+			</div>
 			
 		</div>
 
+		<div class="modal-new-pasta" style="display: none;">
+			<div class="close">X</div>
+			<form action="" method="post" class="form-new-pasta">
+				<label class="label-input">
+					Informe o nome da sua pasta:
+					<input type="text" name="name" class="input input-nome-pasta">
+				</label>
+
+				<label class="label-input">
+					Descrição:
+					<input type="text" name="descricao" class="input input-nome-pasta">
+				</label>
+			</form>
+		</div>
 	</main>
 	<footer class="rodape">
 		<div class="propaganda-pra-ficar-rico"></div>
@@ -173,6 +228,11 @@
 
 
 	<script>
+		function closeModal(classe){
+			const container = document.body.querySelector(`.${classe}`);
+			container.style.display = 'none';
+		}
+
 		function openMenu() {
 			document.body.querySelector('.side-menu').style.display = 'block';
 			setTimeout(()=>{
