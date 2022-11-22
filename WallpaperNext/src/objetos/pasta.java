@@ -6,6 +6,7 @@ public class pasta {
 	public String nome;
 	static public int quantidadePastas=0;
 	public String descricao;
+	public String criador;
 	
 	public pasta(String nome, String descricao) {
 		super();

@@ -1,4 +1,5 @@
 package Main;
+import objetos.*;
 
 public class Main {
 
