@@ -945,3 +945,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.gu
 2022-12-01 09:24:30,653 [Worker-63: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-12-01 09:24:30,654 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\priscila_paula\Desktop\Nova pasta (4)\trabalho_java_web\mysql-connector-java-8.0.30\src\build\misc\src\main\resources
 2022-12-01 09:24:30,655 [Worker-63: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-01 09:24:30,656 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\priscila_paula\Desktop\Nova pasta (4)\trabalho_java_web\mysql-connector-java-8.0.30\src\build\misc\src\test\resources

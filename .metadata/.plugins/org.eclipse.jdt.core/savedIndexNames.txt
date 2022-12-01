@@ -10,7 +10,6 @@ INDEX VERSION 1.131+C:\Users\priscila_paula\eclipse-workspace2\.metadata\.plugin
 302808593.index
 1558041503.index
 4051825172.index
-3081801165.index
 1662615200.index
 142364319.index
 1705896247.index
