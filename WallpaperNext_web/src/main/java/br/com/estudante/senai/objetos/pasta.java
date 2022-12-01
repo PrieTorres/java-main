@@ -2,7 +2,6 @@ package br.com.estudante.senai.objetos;
 
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet(urlPatterns = "/pastas")
 public class pasta {
 	
 	Foto[] fotos = new Foto[100];
@@ -11,10 +10,11 @@ public class pasta {
 	public String descricao;
 	public String criador; 
 	
-	public pasta(String nome, String descricao) {
+	public pasta(String nome, String descricao, String criador) {
 		super();
 		this.nome = nome;
 		this.descricao = descricao;
+		this.criador = criador;
 		this.quantidadePastas++;
 	}
 	
